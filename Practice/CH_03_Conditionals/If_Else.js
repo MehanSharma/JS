@@ -55,12 +55,12 @@ else{
 // Nested If else 
 
 
-age = 10;
-let weight = 30;
+age = 19;
+let weight = 46;
 
 
-if(age>18){
-    if(weight>45){
+if(age>10){
+    if(weight>30){
         console.log("can donate Blood");   
     }
     else{
