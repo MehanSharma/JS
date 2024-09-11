@@ -5,5 +5,4 @@ alert("hello")
 
 let name = prompt("Enter Name")
 
-confirm("is your name "+(name)+" ?")
-
+confirm("is your name "+(name)+" ?")        

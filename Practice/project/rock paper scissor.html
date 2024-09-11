@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+       body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #1d1d1d;
+            gap: 20px;
+
+        }
+
+        .box{
+            width: 300px;
+            height: 300px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-family: cursive;
+            background: orange;
+            transition: all .8s ease;
+        }
+        .box:hover{
+                transform: scale(1.1);
+            }
+        .outer{
+            display: flex;
+            gap: 40px;
+        }
+
+        i{
+            font-size: 140px;
+            color: white;
+        }
+        #div1{
+           
+
+        }
+        #div2{
+           
+        }
+        #div3{
+           
+        }
+     
+    </style>
+
+</head>
+
+<body>
+    <div class="outer">
+
+        <div onclick="rock()" class="box" id="div1">
+            <i class="fa-regular fa-hand-back-fist"></i>
+        </div>
+        <div onclick="paper()" class="box" id="div2">
+            <i class="fa-regular fa-hand"></i>
+        </div>
+        <div onclick="scissor()" class="box" id="div3">
+            <i class="fa-regular fa-hand-scissors"></i>
+        </div>
+
+
+    </div>
+    <script>
+       let computer_choice;
+       function PlayComputer(){
+            computer_choice = Math.random()
+            if(computer_choice<0.4){
+                computer_choice="Rock"
+            }
+            else if(computer_choice>0.4 && computer_choice<0.6){
+                computer_choice="Paper"
+            }
+            else{
+                computer_choice="Scissor"
+
+            }
+            
+        }
+
+        console.log(computer_choice);
+        
+        function rock(){
+            PlayComputer()
+            if(computer_choice=="Rock"){
+                alert(`Both selected Rock so Game is Tied`)
+            }else if(computer_choice=="Paper"){
+                alert(`Computer selected ${computer_choice}, you selected Rock so Computer Wins`)
+            }else{
+                alert(`Computer selected ${computer_choice}, you selected Rock so You Win`)
+            }
+        }
+        function paper(){
+            PlayComputer()
+
+            if(computer_choice=="Paper"){
+                alert(`Both selected Paper so Game is Tied`)
+            }else if(computer_choice=="Rock"){
+                alert("Computer selected Rock so you win")
+            }else{
+                alert("Computer Selected Scissor so Computer wins")
+            }
+        }
+        
+        function scissor(){
+            PlayComputer()
+
+            if(computer_choice=="Scissor"){
+                alert("Both selected Scissor so Game is Tied")
+            }else if(computer_choice=="Rock"){
+                alert("Computer Selected Rock so Computer wins")
+            }else{
+                alert("Computer selected paper so you win")
+            }
+        }
+
+
+
+    </script>
+</body>
+
+</html>
