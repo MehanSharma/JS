@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+        i{
+            font-size: 50px;
+            color: #1d1d1d;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn" id="btn">
+        <i id="icon" class="fa-solid fa-moon"></i>
+
+    </div>
+
+
+    <script>
+        let isDark = false;
+        let btn = document.getElementById("btn")
+        let icon = document.getElementById("icon")
+        function changeTheme(){
+            if(isDark){
+                icon.classList.add("fa-solid fa-sun")
+                isDark=false;
+            document.body.style.backgroundColor="#fff"
+            
+        }   else{
+                icon.classList.add("fa-solid fa-moon")
+
+                btn.style.boxShadow="0px 0px 0px transparent"
+                isDark=true;    
+                document.body.style.backgroundColor="#000"
+            }
+        }
+        btn.addEventListener("click",changeTheme)
+    </script>   
+</body>
+</html>
