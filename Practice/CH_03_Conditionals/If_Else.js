@@ -20,35 +20,35 @@ let age = 19;
 
 // If else if ladder 
 
-let mark =10;
+let mark = 10;
 
-if(mark>90 && mark<100){
+if (mark > 90 && mark < 100) {
     console.log("A+ Grade");
 }
-else if(mark>80 && mark<=90){
+else if (mark > 80 && mark <= 90) {
     console.log("A Grade");
 }
-else if(mark>70 && mark<=80){
+else if (mark > 70 && mark <= 80) {
     console.log("B Grade");
 }
-else if(mark>60 &&  mark<=70){
+else if (mark > 60 && mark <= 70) {
     console.log("C Grade");
 }
-else if(mark>50 &&  mark<=60){
+else if (mark > 50 && mark <= 60) {
     console.log("D Grade");
 }
 
-else if(mark>35 && mark<=50){
+else if (mark > 35 && mark <= 50) {
     console.log("E Grade");
-    
+
 }
-else if(mark<35 && mark>0){
+else if (mark < 35 && mark > 0) {
     console.log("you Failed ");
-    
+
 }
-else{
+else {
     console.log("Wrong marks entered");
-    
+
 }
 
 
@@ -59,16 +59,16 @@ age = 19;
 let weight = 46;
 
 
-if(age>10){
-    if(weight>30){
-        console.log("can donate Blood");   
+if (age > 10) {
+    if (weight > 30) {
+        console.log("can donate Blood");
     }
-    else{
+    else {
         console.log("Cannot donate blood due to weight criteria");
-        
+
     }
 }
-else{
+else {
     console.log("Cannot donate blood due to age criteria");
 
 }
