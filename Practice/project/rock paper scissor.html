@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+            <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -68,10 +68,10 @@
         let computer_choice;
         function PlayComputer() {
             computer_choice = Math.random()
-            if (computer_choice < 0.4) {
+            if (computer_choice < 0.5) {
                 computer_choice = "Rock"
             }
-            else if (computer_choice > 0.4 && computer_choice < 0.6) {
+            else if (computer_choice > 0.5 && computer_choice < 0.6) {
                 computer_choice = "Paper"
             }
             else {
@@ -86,22 +86,22 @@
         function rock() {
             PlayComputer()
             if (computer_choice == "Rock") {
-                alert(`Both selected Rock so Game is Tied`)
+                alert(`Both selected Rock so Game is Tied.`)
             } else if (computer_choice == "Paper") {
-                alert(`Computer selected ${computer_choice}, you selected Rock so Computer Wins`)
+                alert(`Computer selected ${computer_choice}, you selected Rock so Computer Wins.`)
             } else {
-                alert(`Computer selected ${computer_choice}, you selected Rock so You Win`)
+                alert(`Computer selected ${computer_choice}, you selected Rock so You Win.`)
             }
         }
         function paper() {
             PlayComputer()
 
             if (computer_choice == "Paper") {
-                alert(`Both selected Paper so Game is Tied`)
+                alert(`Both selected Paper so Game is Tied.`)
             } else if (computer_choice == "Rock") {
-                alert(`Computer selected ${computer_choice}, you selected Paper so You Win`)
+                alert(`Computer selected ${computer_choice}, you selected Paper so You Win.`)
             } else {
-                alert(`Computer selected ${computer_choice}, you selected Paper so Computer Wins`)
+                alert(`Computer selected ${computer_choice}, you selected Paper so Computer Wins.`)
             }
         }
 
@@ -109,9 +109,9 @@
             PlayComputer()
 
             if (computer_choice == "Scissor") {
-                alert("Both selected Scissor so Game is Tied")
+                alert("Both selected Scissor so Game is Tied.")
             } else if (computer_choice == "Rock") {
-                alert(`Computer selected ${computer_choice}, you selected Scissor so Computer Wins`)
+                alert(`Computer selected ${computer_choice}, you selected Scissor so Computer Wins.`)
             } else {
                 alert(`Computer selected ${computer_choice}, you selected Paper so You Win`)
             }
